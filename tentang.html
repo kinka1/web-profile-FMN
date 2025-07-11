@@ -45,7 +45,10 @@
   </head>
   <body data-spy="scroll" data-target=".fixed-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-primary pt-3">
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-primary pt-3"
+      style="background-color: white"
+    >
       <div class="container">
         <a class="navbar-brand logo-image" href="index.html"
           ><img
@@ -105,8 +108,40 @@
     <!-- end of navbar -->
     <!-- end of navigation -->
 
+    <header
+      class="ex-header"
+      style="
+        position: relative;
+        background-image: url('images/bg-tentang.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <!-- Overlay hitam transparan -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5); /* atur tingkat gelap di sini */
+          z-index: 1;
+        "
+      ></div>
+
+      <!-- Konten header -->
+      <div class="container" style="position: relative; z-index: 2">
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+            <h1 class="text-white">Tentang Kami</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <!-- Header -->
-    <header class="ex-header">
+    <!-- <header class="ex-header">
       <div class="container">
         <div class="row">
           <div class="col-xl-10 offset-xl-1">
@@ -114,7 +149,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <!-- end of ex-header -->
     <!-- end of header -->
 
@@ -198,7 +233,7 @@
                     "
                   />
                   <h5 class="card-title mb-1">Asmantha Oktavian Fareno</h5>
-                  <p class="text-muted mb-0">Direktur Utama</p>
+                  <p class="text-muted mb-0">Direktur</p>
                 </div>
               </div>
             </div>
