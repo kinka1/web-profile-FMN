@@ -419,6 +419,10 @@ input[type="checkbox"] {
   transform: translateX(-100%);
 }
 
+.offcanvas-collapse.open .navbar .nav-item .nav-link {
+  color: white;
+}
+
 .navbar .navbar-nav {
   margin-top: 0.75rem;
   margin-bottom: 0.5rem;
@@ -1320,49 +1324,60 @@ a:hover.back-to-top {
     margin-left: 2.875rem;
   }
   /* end of extra pages */
-
-  .card-about {
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    min-height: 350px;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    position: relative;
-  }
-
-  /* Gambar latar berbeda */
-  .card-pengadaan {
-    background-image: url("../images/bg-jasa.jpg"); /* Ganti sesuai gambar kamu */
-  }
-
-  .card-konstruksi {
-    background-image: url("../images/bg-konstruksi.jpg"); /* Ganti sesuai gambar kamu */
-  }
-
-  .overlay-about {
-    background-color: rgba(0, 0, 0, 0.55);
-    height: 100%;
-    width: 100%;
-    transition: background-color 0.3s ease;
-  }
-
-  .card-about:hover {
-    transform: scale(1.02);
-  }
-
-  .card-about:hover .detail-button {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  .detail-button {
-    opacity: 0;
-    transform: translateY(10px);
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
 }
+
+/* Tambahan untuk teks putih dan spasi antar item saat sidebar terbuka */
+.offcanvas-collapse.open .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.offcanvas-collapse.open .navbar-nav .nav-item {
+  margin-bottom: 1.5rem;
+  font-size: x-large;
+}
+
+
 /* end of min-width 1200px */
+.card-about {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  min-height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+/* Gambar latar berbeda */
+.card-pengadaan {
+  background-image: url("../images/bg-jasa.jpg"); /* Ganti sesuai gambar kamu */
+}
+
+.card-konstruksi {
+  background-image: url("../images/bg-konstruksi.jpg"); /* Ganti sesuai gambar kamu */
+}
+
+.overlay-about {
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.card-about:hover {
+  transform: scale(1.02);
+}
+
+.card-about:hover .detail-button {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.detail-button {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
